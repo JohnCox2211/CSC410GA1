@@ -6,7 +6,7 @@ using namespace std;
 // constructor
 genome::genome(){
 	genes = NULL;
-	nGenes = 0
+	nGenes = 0;
 }
 
 // Destructer
@@ -20,7 +20,7 @@ void genome::allocate(int nGenes){
 		deallocate();
 	}
 	
-	if(numGenes <= 0) return;
+	if(nGenes <= 0) return;
 
 	genes = new Pixel[nGenes];
 	nGenes = nGenes;
@@ -52,19 +52,19 @@ void genome::randomize(){
 }
 
 //setters
-void genome:: set_red(int index, int value){
+void genome::set_red(int index, int value){
 	if(index >= 0 && index < nGenes){
 		genes[index].red = value;
 	}
 }
 
-void genome:: set_green(int index, int value){
+void genome::set_green(int index, int value){
         if(index >= 0 && index < nGenes){
                 genes[index].green = value;
         }
 }
 
-void genome:: set_blue(int index, int value){
+void genome::set_blue(int index, int value){
         if(index >= 0 && index < nGenes){
                 genes[index].blue = value;
         }
@@ -72,21 +72,21 @@ void genome:: set_blue(int index, int value){
 
 
 // getters
-int genome:: get_red(int index, int value){
+int genome::get_red(int index, int value){
         if(index >= 0 && index < nGenes){
                 return genes[index].red;
         }
 	return -1;
 }
 
-int genome:: get_green(int index, int value){
+int genome::get_green(int index, int value){
         if(index >= 0 && index < nGenes){
                 return genes[index].green;
         }
         return -1;
 }
 
-int genome:: get_blue(int index, int value){
+int genome::get_blue(int index, int value){
         if(index >= 0 && index < nGenes){
                 return genes[index].blue;
         }
