@@ -9,7 +9,7 @@ int main() {
 
 	myGenome.print();
 
-	myGenome.set_blue(0, 226);
+	myGenome.setBlue(0, 226);
 
 	myGenome.print();
 

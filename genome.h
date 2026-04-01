@@ -8,7 +8,7 @@ class genome{
 public:
 	genome();
 	~genome();
-	void allocate(int nGenes)
+	void allocate(int nGenes);
 	void deallocate();
 	void randomize();
 

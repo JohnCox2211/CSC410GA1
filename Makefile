@@ -7,5 +7,11 @@ genome.o: genome.h genome.cpp
 main.o: main.cpp
 	g++ -c main.cpp
 
+test: genome.o testGenome.o
+	g++ -o testProgram genome.o testGenome.o
+
+testGenome.o: testGenome.cpp genome.h
+	g++ -c testGenome.cpp
+
 clean:
-	rn -f *.o program
+	rm -f *.o program testProgram

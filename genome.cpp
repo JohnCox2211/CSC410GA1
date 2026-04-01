@@ -23,7 +23,7 @@ void genome::allocate(int nGenes){
 	if(nGenes <= 0) return;
 
 	genes = new Pixel[nGenes];
-	nGenes = nGenes;
+	this->nGenes = nGenes;
 
 	// init pixels
 	for (int i = 0; i < nGenes; i++){
