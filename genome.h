@@ -13,14 +13,14 @@ public:
 	void randomize();
 
 	//setters
-	void set_red(int index, int value);
-	void set_green(int index, int value);
-	void set_blue(int index, int value);
+	void setRed(int index, int value);
+	void setGreen(int index, int value);
+	void setBlue(int index, int value);
 
 	//getters
-	int get_red(int index);
-	int get_green(int index);
-	int get_blue(int index);
+	int getRed(int index);
+	int getGreen(int index);
+	int getBlue(int index);
 
 	void print(); // for display
 
