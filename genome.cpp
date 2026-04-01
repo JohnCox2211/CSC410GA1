@@ -52,19 +52,19 @@ void genome::randomize(){
 }
 
 //setters
-void genome::set_red(int index, int value){
+void genome::setRed(int index, int value){
 	if(index >= 0 && index < nGenes){
 		genes[index].red = value;
 	}
 }
 
-void genome::set_green(int index, int value){
+void genome::setGreen(int index, int value){
         if(index >= 0 && index < nGenes){
                 genes[index].green = value;
         }
 }
 
-void genome::set_blue(int index, int value){
+void genome::setBlue(int index, int value){
         if(index >= 0 && index < nGenes){
                 genes[index].blue = value;
         }
@@ -72,21 +72,21 @@ void genome::set_blue(int index, int value){
 
 
 // getters
-int genome::get_red(int index){
+int genome::getRed(int index){
         if(index >= 0 && index < nGenes){
                 return genes[index].red;
         }
 	return -1;
 }
 
-int genome::get_green(int index){
+int genome::getGreen(int index){
         if(index >= 0 && index < nGenes){
                 return genes[index].green;
         }
         return -1;
 }
 
-int genome::get_blue(int index){
+int genome::getBlue(int index){
         if(index >= 0 && index < nGenes){
                 return genes[index].blue;
         }
