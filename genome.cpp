@@ -72,21 +72,21 @@ void genome::set_blue(int index, int value){
 
 
 // getters
-int genome::get_red(int index, int value){
+int genome::get_red(int index){
         if(index >= 0 && index < nGenes){
                 return genes[index].red;
         }
 	return -1;
 }
 
-int genome::get_green(int index, int value){
+int genome::get_green(int index){
         if(index >= 0 && index < nGenes){
                 return genes[index].green;
         }
         return -1;
 }
 
-int genome::get_blue(int index, int value){
+int genome::get_blue(int index){
         if(index >= 0 && index < nGenes){
                 return genes[index].blue;
         }
